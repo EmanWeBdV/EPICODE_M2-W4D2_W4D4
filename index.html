@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>M2 - W4D1</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div id="logoName">
+            <p>Epicode Career Portal</p>
+        </div>
+        <nav>
+            <ul>
+                <li>Jobs</li>
+                <li>Locations</li>
+                <li>Help</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div id="loginArea">
+            <ul>
+                <li>Sign in</li>
+                <li>Sign Up</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="jobsNumberAndResearchArea">
+            <div id="numberJobsContainer">
+                <h1>Trova il lavoro che fa per te!</h1>
+                <h2 id="numberJobsFound"></h2>
+            </div>
+            <div id="searchBarContainer">
+                <div>
+                    <ion-icon name="search-outline" class="iconImport"></ion-icon>
+
+                    <input type="text" name="lavoro" placeholder="  Cerca un lavoro tra le offerte" id="searchJob"
+                        value="">
+                </div>
+
+                <div>
+                    <ion-icon name="location-outline" class="iconImport"></ion-icon>
+                    <input type="text" name="lavoro" placeholder="  Seleziona una località" id="searchLocation"
+                        value="">
+                </div>
+
+                <input type="submit" value="Cerca" id="searchButton">
+            </div>
+        </div>
+        <section id="jobContainer">
+            <div id="jobsFound">
+                <table id="tableJobs">
+                    <thead>
+                        <tr>
+                            <th>Lavoro</th>
+                            <th>Località</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="containerTable">
+                    </tbody>
+
+                </table>
+                <div id="errorMessage">
+                    <ion-icon name="close-circle-outline" id="errorLogo"></ion-icon>
+                    <p>Nessuna corrispondenza trovata</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src=" ./assets/js/script.js"></script>
+</body>
+
+</html>

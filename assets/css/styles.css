@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #2b7d99;
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+  font-size: 1em;
+  font-family:
+    Josefin Sans,
+    sans-serif;
+}
+
+header {
+  margin-top: 3em;
+  font-weight: 700;
+  color: #27293b;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  gap: 0 2em;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  font-weight: 100;
+}
+
+main {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#jobsNumberAndResearchArea {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 13em;
+  border-radius: 1em;
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  z-index: 0;
+}
+
+#numberJobsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 0.5em 0;
+}
+
+#searchBarContainer {
+  position: absolute;
+  z-index: 1;
+  top: 10em;
+  display: flex;
+  gap: 2em;
+  padding: 1em;
+  width: 50%;
+  height: 3em;
+  border-radius: 1em;
+  background-color: white;
+  box-shadow: 1px 6px 20px 3px #2b7d99;
+}
+
+#searchBarContainer div {
+  width: 100%;
+}
+
+div #searchJob,
+div #searchLocation {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  padding: 1em;
+  padding-left: 2em;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.iconImport {
+  position: absolute;
+  z-index: 1;
+  color: #2b7d99;
+  top: 1.8em;
+}
+
+#searchButton {
+  margin-left: 1em;
+  border: none;
+  background-color: #6eca7d;
+  color: white;
+  font-weight: 600;
+  border-radius: 1em;
+  width: 40%;
+  height: auto;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: #2b7d9a;
+}
+
+#searchButton:active {
+  transition: background-color 0.1s ease-in-out;
+  background-color: #6eca7d;
+}
+
+#searchLocation {
+  border: none;
+}
+
+#searchJob {
+  border-top: none;
+  border-bottom: none;
+  border-right: 1px solid lightgrey;
+  border-left: none;
+}
+
+#jobContainer {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin-top: 2em;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 2em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  text-align: left;
+  background: #2a7b9b;
+  color: white;
+}
+
+th:first-of-type {
+  border-radius: 1em 0 0 0;
+}
+
+th:last-of-type {
+  border-radius: 0 1em 0 0;
+}
+
+#NumberJobsFound {
+  font-weight: 200;
+  font-style: italic;
+}
+
+#errorMessage {
+  margin-top: 10em;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em 0;
+  color: rgb(175, 10, 10);
+}
+
+#errorLogo {
+  font-size: 10em;
+}
+
+#errorMessage p {
+  font-size: 3em;
+  font-weight: 600;
+}
