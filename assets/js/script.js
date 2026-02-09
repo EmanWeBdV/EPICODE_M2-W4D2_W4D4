@@ -189,6 +189,8 @@ function printTable(dataPrint){
 const BUTTON_PRESS = document.getElementById("searchButton")
 BUTTON_PRESS.addEventListener("click", startResearch)
 
+let firstStatus = document.getElementById("errorMessage").style.display= "none"
+
 function startResearch(){
   const table = document.getElementById("tableJobs")
   const errorMsg = document.getElementById("errorMessage")
